@@ -1,27 +1,67 @@
 
-/*
- * Un petit script mesurant l'écoulement du temps
- * 
- * Source: https://codepen.io/Tcip/pen/BNKjeN
- * Auteur: Mikael Elmblad, tcip.se
-*/
+<!doctype html>
+<html class="no-js" lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>The JS Clocks</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/clocks.js"></script>
+        <style>
 
-// répéter la fonction metronone une fois par seconde
+        body {
+          margin: 0;
+        }
+        svg {
+          border: 1px; solid #ddd;
+          background: #fff;
+          margin: auto;
+          height: 100%;
+          width: auto;
+        }
+        html {
+          font-familiy: helvetica;
+          font-size: 500%;
 
-var myVar = setInterval(function() {
-  metronome();
-}, 1000);
+        }
+
+        time {
+        		position: absolute;
+        	}
+
+          </style>
+
+    </head>
 
 
-function metronome() {
+    <body>
 
-  // 1: on définit l'heure, avec l'objet Date()
-  // voir documentation: https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/Date
+    <time id="heure">00</time>
+    <time id="minute">00</time>
+    <time id="seconde">00</time>
 
-  var d = new Date();
-  
-  // 2: on affiche l'heure dans notre objet "horloge"
+    
 
-  document.getElementById("horloge").innerHTML = d.toLocaleTimeString();
+    </body>
+    <script>
 
-}
+	// Initialiser l'affichage au chargement:
+	metronome();
+	metronomeMinute();
+	metronomeHeure();
+	// Répéter la fonction metronome une fois par seconde
+	var monIntervalle = setInterval(function() {
+	  metronome();
+  }, 1000); // mille millisecondes = 1 seconde
+	// Notre fonction random:
+	function getRandom(min, max) {
+    	return Math.floor(Math.random() * (max - min + 1)) + min;
+	}
+
+
+
+
+    var date = new Date
+console.log.(Date);
+document.getElementById('seconde').innerHTML=seconde;
