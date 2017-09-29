@@ -1,0 +1,16 @@
+Description du fonctionnement:
+
+- 2 cercles gradués, de couleurs différentes: cercle des minutes, cercle des        	   heures
+- c’est les intersections des deux cercles qui indiquent l’heure qu’il est.
+- C’est où le cercle passe sur l’autre qui fait foi.
+
+Les étapes:
+
+- Créer 2 cercles gradués et de couleurs différentes.
+- Les faire se superposer, une fois en dessus, une fois en dessous.
+- Trouver un mouvement (algorythme) qui fonctionne pour donner l’heure correctement.
+
+Points à résoudre:
+
+- Réussir à faire se superposer les cercles
+- Trouver le rythme
